@@ -1,0 +1,139 @@
+<!doctypehtml>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width,initial-scale=1.0">
+		<meta http-equiv="X-UA-Compatible" content="ie=edge">
+		<title>FullPage.js</title>
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/3.1.0/fullpage.min.css" integrity="sha512-RVmrWua3k1yTDEOg4Yzs2bK5+Thh7nM6jrhDq/6/5/Mwa0JbYe4pP4YMK5sqghKz01T3DgrwYc57Jaf1PSurCg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+		<style>
+			h1{
+				font-family:'Montserrat';
+				text-align:center;
+				color:#fff;
+			}
+			.s1{
+				background:url('1.png');
+				background-size:cover;
+				background-size: 100% 100%;
+			}
+			.s2{
+				background:url('2.png');
+				background-size:cover;
+				background-size: 100% 100%;
+			}
+			#snd{
+					text-align:left;
+					margin-left:2em;
+					font-size:4rem;
+				}
+			.s3{
+				background:url('3.png');
+				background-size:cover;
+				background-size: 100% 100%;
+			}
+			span{
+				background:#fff !important;
+			}
+			.fp-slidesNav.fp-bottom{
+				bottom:17px;
+				margin-left:1em !important;
+			}
+			@media only screen and (max-width:500px){
+				.s1{
+				background:url('ph1.png');
+				background-size:cover;
+				background-size: 100% 100%;
+			}
+			.s2{
+				background:url('ph3.png');
+				background-size:cover;
+				background-size: 100% 100%;
+				
+			}
+			#snd{
+					text-align:left;
+					margin-left:2em;
+					font-size:4rem;
+				}
+			.s3{
+				background:url('ph4.png');
+				background-size:cover;
+				
+				 background-size: 100% 100%;
+  
+			}
+			}
+			
+			@media only screen 
+				and (min-device-width: 768px) 
+				and (max-device-width: 1024px) 
+				and (-webkit-min-device-pixel-ratio: 1) 
+			{
+				.s1{
+				background:url('tab1.png');
+				background-size:cover;
+				background-size: 100% 100%;
+			}
+			.s2{
+				background:url('tab3.png');
+				background-size:cover;
+				background-size: 100% 100%;
+				
+			}
+			#snd{
+					text-align:left;
+					margin-left:2em;
+					font-size:4rem;
+				}
+			.s3{
+				background:url('tab4.png');
+				background-size:cover;
+				
+				 background-size: 100% 100%;
+  
+			}
+			}
+		</style>
+	</head>
+	<body>
+		<div id="fullPage">
+			<div class="section s1">
+				<div class="slide">
+					<h1>The First Slide</h1>
+				</div>
+				<div class="slide">
+					<h1>The Second Slide</h1>
+				</div>
+				<div class="slide">
+					<h1>The Third Slide</h1>
+				</div>
+			</div>
+			<div class="section s2">
+				<h1 id="snd">The Second section</h1>
+			</div>
+			<div class="section s3">
+				<h1>The Third section</h1>
+			</div>
+		</div>
+		
+		
+		
+		
+		
+			<script src="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/3.1.0/fullpage.min.js" integrity="sha512-HqbDsHIJoZ36Csd7NMupWFxC7e7aX2qm213sX+hirN+yEx/eUNlZrTWPs1dUQDEW4fMVkerv1PfMohR1WdFFJQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+			
+			<script>
+				new fullpage('#fullPage', {
+					autoScrolling:true,
+					navigation:true,
+					anchors:['section1','section2','section3'],
+					navigationTooltips:['Home','About Us', 'Contact Us'],
+					showActiveTooltip:true,
+					scrollingSpeed:3000,
+					controlArrows:false,
+					slidesNavigation:true
+					})
+			</script>
+	</body>
+</html>
